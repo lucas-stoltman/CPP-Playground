@@ -6,10 +6,13 @@
 using namespace std;
 
 int main() {
-   
-   const string name = "Lucas";
+   // can't change because of const
+   // const string name = "Lucas";
 
-   cout << "Hello World" << endl;
+   string name = "Lucas";
+   name = "Lucas Changed";
+
+   cout << name << endl;
    return 0;
 }
 
