@@ -5,14 +5,26 @@
 
 using namespace std;
 
+// class Test {
+
+// }
+
+// this method will allow the return type to change
+string& returnString(string& s) { return s; }
+
+// this method won't allow the return type to change
+const string& returnStringConst(string& s) { return s; }
+
 int main() {
-   // can't change because of const
-   // const string name = "Lucas";
+   string s = "test";
 
-   string name = "Lucas";
-   name = "Lucas Changed";
+   cout << s << endl;
 
-   cout << name << endl;
+   returnString(s) = "test2";
+   // returnStringConst(s) = "testConst";
+
+   cout << s << endl;
+
    return 0;
 }
 
