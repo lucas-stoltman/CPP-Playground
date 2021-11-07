@@ -7,10 +7,14 @@ class Basic {
   public:
    // constructors
    Basic();
+   // Basic(int i);
+
+   // print
+   void printNum();
 
   protected:
   private:
    int num = 1;
 };
 
-#endif Basic_H
+#endif

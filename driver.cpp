@@ -1,8 +1,8 @@
 // Initialized by Lucas Stoltman October 31st 2021
 
 #include <iostream>
-#include <string
-#include "test.h"
+#include <string>
+#include "basic.h"
 
 using namespace std;
 
@@ -25,6 +25,12 @@ int main() {
    // returnStringConst(s) = "testConst";
 
    cout << s << endl;
+
+   // -----------------------------------------------------------
+
+   Basic test;
+
+   test.printNum();
 
    return 0;
 }
