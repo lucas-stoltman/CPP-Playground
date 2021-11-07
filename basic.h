@@ -1,16 +1,16 @@
-#ifndef Test_H
-#define Test_H
+#ifndef Basic_H
+#define Basic_H
 
 using namespace std;
 
-class Test {
+class Basic {
   public:
    // constructors
-   Test();
+   Basic();
 
   protected:
   private:
    int num = 1;
 };
 
-#endif Test_H
+#endif Basic_H
