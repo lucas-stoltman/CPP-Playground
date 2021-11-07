@@ -7,11 +7,14 @@ class Basic {
    Basic();
    Basic(int i);
 
+   void setNum(int i);
+
    // print
    void printNum();
 
   protected:
   private:
+   int getNum();
    int num = 1;
 };
 

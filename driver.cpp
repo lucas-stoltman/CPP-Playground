@@ -31,6 +31,8 @@ int main() {
    Basic test(5);
 
    test.printNum();
+   test.setNum(10);
+   test.printNum();
 
    return 0;
 }
