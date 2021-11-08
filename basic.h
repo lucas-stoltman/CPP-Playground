@@ -9,13 +9,27 @@ class Basic {
 
    void setNum(int i);
 
+   // -----------------------------------------------------------
+   // -----------------------Const Practice----------------------
+   // -----------------------------------------------------------
+   // return type that can't be changed
+   const int& firstConstGet();
+
+   // won't change the reference
+   int& secondConstGet(const int& outside);
+
+   // won't change the data within the current class that calls the method
+   int thirdConstGet() const;
+   // -----------------------------------------------------------
+
    // print
    void printNum();
+
+   int num = 1;
 
   protected:
   private:
    int getNum();
-   int num = 1;
 };
 
 #endif

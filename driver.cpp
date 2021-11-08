@@ -27,14 +27,14 @@ int main() {
    // VALUES ----------------------------------------------------
    const int A = 1;
    // const values can't be changed
-   // A = 5; illegal
+   // A = 5; //illegal
    print("A", A);
 
    // POINTERS --------------------------------------------------
    int B = 2;
    int* const ptrB = &B;
    // const pointers can't point anywhere else
-   // ptrB = &A; illegal
+   // ptrB = &A; //illegal
    print("B", B);
 
    // but the value they point toward can still be changed
@@ -44,8 +44,32 @@ int main() {
    // FUNCTIONS -------------------------------------------------
    Basic test(5);
 
-   // ------------------------------------
+   // first
+   // const signature()
+   // return type that can't be changed
+   // Good at protecting variables during initialization
+   // test.firstConstGet() = 23; //illegal
+   cout << "Class first const: " << test.firstConstGet() << endl;
+
+   // second
+   // signature(const int&)
+   // won't change the reference
+   // Good at protecting values that are passed into functions
    int outside = 101;
+   cout << "Class second const: " << test.secondConstGet(outside) << endl;
+   // test::outside = 5; //illegal
+   print("outside", outside);
+
+   // third
+   // signature() const
+   // won't change the data within the current class that calls the method
+   // Good at restricting access for methods within classes (getters)
+   cout << "Class third const: " << test.thirdConstGet() << endl;
+   // test::num = 5; //illegal
+   print("num",test.num);
+
+
+   // ------------------------------------
 
    return 0;
 }
@@ -53,7 +77,6 @@ int main() {
 // TODO List
 /*
 
-- const
 - operator overload
 - reference
 - pointers
