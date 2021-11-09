@@ -1,10 +1,19 @@
 
 #include "operator.h"
 
-Operator::Operator(/* args */)
-{
-}
+// operator overloads
+// <<
 
-Operator::~Operator()
-{
-}
+// =
+
+// +
+
+// -
+
+// /
+
+// *
+
+Operator::Operator(/* args */) {}
+
+Operator::~Operator() {}

@@ -1,9 +1,23 @@
 #ifndef Operator_H
 #define Operator_H
 
-class Operator{
+// operator overloads
+// <<
+
+// =
+
+// +
+
+// -
+
+// /
+
+// *
+
+class Operator {
   private:
-   /* data */
+   int num = 10;
+
   public:
    Operator(/* args */);
    ~Operator();
