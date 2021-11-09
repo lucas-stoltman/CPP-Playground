@@ -4,6 +4,7 @@
 #include <string>
 
 #include "basic.h"
+#include "operator.h"
 
 using namespace std;
 
@@ -74,6 +75,8 @@ int main() {
         << "----------- Operator Overloading -----------\n"
         << "--------------------------------------------\n";
 
+   Operator op;
+   op.printNum();
 
    cout << "\n------ << -----\n";
 
