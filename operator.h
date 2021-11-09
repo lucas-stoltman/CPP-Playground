@@ -19,8 +19,17 @@ class Operator {
    int num = 10;
 
   public:
-   Operator(/* args */);
+   Operator();
    ~Operator();
+
+   // getters
+   int getNum();
+
+   // setters
+   void setNum(int n);
+
+   // actions
+   void printNum();
 };
 
 #endif
