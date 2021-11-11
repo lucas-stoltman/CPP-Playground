@@ -76,7 +76,10 @@ int main() {
         << "--------------------------------------------\n";
 
    Operator op;
-   op.printNum();
+   // cout << op << endl;
+   op.print();
+   ++op;
+   op.print();
 
    cout << "\n------ << -----\n";
 
