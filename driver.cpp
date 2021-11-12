@@ -132,7 +132,17 @@ int main() {
 - protected
 - inheritance
 
-
+- Data Structures (All Dynamic)
+   - Array
+   - Array List
+   - Vector
+   - Stack
+   - Queue
+   - Single Linked List
+   - Double Linked List
+   - Skip List
+   - Binary Tree
+   - Hash Map
 
 
 */
