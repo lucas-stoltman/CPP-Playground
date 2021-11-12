@@ -6,28 +6,6 @@
 
 using namespace std;
 
-// operator overloads
-// <<
-// void Operator::operator<<(Operator &op) { cout << name << ": " << num <<
-// endl; }
-
-// =
-
-// +
-void operator+(Operator& op) {}
-
-// ++prefix
-Operator& Operator::operator++() {
-   ++num;
-   return *this;
-}
-
-// -
-
-// /
-
-// *
-
 Operator::Operator(/* args */) {}
 
 Operator::~Operator() {}
@@ -42,3 +20,32 @@ void Operator::setName(string n) { name = n; }
 
 // actions
 void Operator::print() { cout << name << ": " << num << endl; }
+
+// ------------------------------------
+// operator overloads
+// ------------------------------------
+
+// <<
+// void Operator::operator<<(Operator &op) { cout << name << ": " << num <<
+// endl; }
+
+// =
+
+// +
+void Operator::operator+(int integer) {
+   setNum(num+integer);
+}
+
+// ++prefix
+Operator& Operator::operator++() {
+   ++num;
+   return *this;
+}
+
+// postfix++
+
+// -
+
+// /
+
+// *

@@ -4,22 +4,6 @@
 #define Operator_H
 
 using namespace std;
-
-// operator overloads
-// <<
-
-// =
-
-// +
-
-// -
-
-// /
-
-// *
-
-// ++
-
 class Operator {
   private:
    int num = 10;
@@ -40,16 +24,28 @@ class Operator {
    // actions
    void print();
 
+   // ------------------------------------
    // operator overloads
+   // ------------------------------------
+
+   // <<
    // void operator<<(Operator &op);
 
-   void operator +(Operator &op);
+   // =
+
+   // +
+   void operator+(int integer);
 
    // ++prefix
    Operator& operator++();
 
+   // postfix++
 
+   // -
 
+   // /
+
+   // *
 };
 
 #endif

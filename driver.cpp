@@ -89,7 +89,7 @@ int main() {
 
    cout << "\n---------- + ----------\n";
    op.print();
-   // op+5; TODO
+   op+5;
    op.print();
 
    cout << "\n-------- ++pre --------\n";
@@ -126,6 +126,13 @@ int main() {
 /*
 
 - operator overload
+   <<
+   =
+   +
+   postfix++
+   -
+   /
+   *
 - reference
 - pointers
 - vectors
