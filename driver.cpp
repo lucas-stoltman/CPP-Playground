@@ -76,26 +76,46 @@ int main() {
         << "--------------------------------------------\n";
 
    Operator op;
-   // cout << op << endl;
+
+   cout << "\n---------- << ---------\n";
+   op.print();
+   // cout << op; TODO
+   op.print();
+
+   cout << "\n---------- = ----------\n";
+   op.print();
+   // op=5; TODO
+   op.print();
+
+   cout << "\n---------- + ----------\n";
+   op.print();
+   // op+5; TODO
+   op.print();
+
+   cout << "\n-------- ++pre --------\n";
    op.print();
    ++op;
    op.print();
 
-   cout << "\n---------- << ---------\n";
-
-   cout << "\n---------- = ----------\n";
-
-   cout << "\n---------- + ----------\n";
-
-   cout << "\n-------- ++pre --------\n";
-
    cout << "\n-------- post++ -------\n";
+   op.print();
+   // op++; TODO
+   op.print();
 
    cout << "\n---------- - ----------\n";
+   op.print();
+   // op-5; TODO
+   op.print();
 
    cout << "\n---------- / ----------\n";
+   op.print();
+   // op/5; TODO
+   op.print();
 
    cout << "\n---------- * ----------\n";
+   op.print();
+   // op*5; TODO
+   op.print();
 
    // -----------------------------------------------------------
 
