@@ -10,7 +10,11 @@ class Operator {
    string name = "default";
 
   public:
-   Operator();
+   // defaut, just a string, or string and num
+   Operator(string newName="default", int n = 10);
+   // just num
+   Operator(int n);
+
    ~Operator();
 
    // getters
@@ -35,6 +39,8 @@ class Operator {
 
    // +
    void operator+(int integer);
+   // object addition
+   Operator& operator+(Operator& op1);
 
    // ++prefix
    Operator& operator++();

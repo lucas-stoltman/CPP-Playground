@@ -6,7 +6,9 @@
 
 using namespace std;
 
-Operator::Operator(/* args */) {}
+// constructors
+Operator::Operator(string newName, int n) : name(newName), num(n){}
+Operator::Operator(int n) : num(n){}
 
 Operator::~Operator() {}
 
@@ -32,9 +34,16 @@ void Operator::print() { cout << name << ": " << num << endl; }
 // =
 
 // +
-void Operator::operator+(int integer) {
-   setNum(num+integer);
+void Operator::operator+(int n) {
+   setNum(num+n);
 }
+
+   // object addition
+   Operator& Operator::operator+(Operator& op1) {
+      
+      return *this;
+   }
+
 
 // ++prefix
 Operator& Operator::operator++() {

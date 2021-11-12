@@ -91,6 +91,12 @@ int main() {
    op.print();
    op+5;
    op.print();
+   Operator opB("test",65);
+   opB.print();
+   Operator opC("adfjhsavf");
+   opC.print();
+   Operator opD(10013);
+   opD.print();
 
    cout << "\n-------- ++pre --------\n";
    op.print();
@@ -127,6 +133,7 @@ int main() {
 
 - operator overload
    <<
+   >>
    =
    +
    postfix++
@@ -135,6 +142,7 @@ int main() {
    *
 - reference
 - pointers
+- function pointers
 - vectors
 - protected
 - inheritance
