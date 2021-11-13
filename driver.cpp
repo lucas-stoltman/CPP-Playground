@@ -77,6 +77,12 @@ int main() {
 
    Operator op("op");
 
+   // generating random numbers
+   srand(time(NULL));
+   int r = rand() % 20 + 1;
+
+   cout << "r = " << r << endl;
+
    cout << "\n---------- << ---------\n";
    // op.print();
    // cout << op; TODO
@@ -84,17 +90,17 @@ int main() {
 
    cout << "\n---------- = ----------\n";
    op.print();
-   cout << "Assigning " << op.getName() << " to 5\n";
-   op = 5;
+   cout << "Assigning " << op.getName() << " to " << r << endl;
+   op = r;
    op.print();
 
    cout << "\n---------- + ----------\n";
    op.print();
-   cout << "Adding 5\n";
-   op + 5;
+   cout << "Adding " << r << endl;
+   op + r;
    op.print();
 
-   Operator op2("op2", 35);
+   Operator op2("op2", r);
    op2.print();
 
    Operator op3("op3", op + op2);
@@ -111,8 +117,8 @@ int main() {
 
    cout << "\n---------- - ----------\n";
    op.print();
-   cout << "Subtracting 5\n";
-   op - 5;
+   cout << "Subtracting " << r << endl;
+   op - r;
    op.print();
 
    op2.print();
@@ -134,6 +140,8 @@ int main() {
    op * 10;
    op.print();
 
+   cout << "r = " << r << endl;
+
    // -----------------------------------------------------------
 
    return 0;
@@ -147,6 +155,10 @@ int main() {
    >>
    =
    / fix truncation
+
+   randomize "r" every time it is used
+   perhaps make it a class with randomze()
+
 - reference
 - pointers
 - function pointers
