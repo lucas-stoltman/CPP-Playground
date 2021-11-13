@@ -62,10 +62,7 @@ int Operator::operator-(Operator& op1) {
 }
 
 // /
-void Operator::operator/(int integer) {
-   double d = num / integer;
-   cout << d << endl;
-   setNum(d);
-}
+void Operator::operator/(int integer) { setNum(num / integer); }
 
 // *
+void Operator::operator*(int integer) { setNum(num * integer); }

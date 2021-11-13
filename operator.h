@@ -55,6 +55,7 @@ class Operator {
    void operator/(int integer);
 
    // *
+   void operator*(int integer);
 };
 
 #endif
