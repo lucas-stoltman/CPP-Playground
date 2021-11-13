@@ -28,10 +28,12 @@ void Operator::print() { cout << name << ": " << num << endl; }
 // ------------------------------------
 
 // <<
-// void Operator::operator<<(Operator &op) { cout << name << ": " << num <<
-// endl; }
+// void Operator::operator<<(Operator& op) {
+//    cout << op.getName() << ": " << op.getNum() << endl;
+// }
 
 // =
+void Operator::operator=(int integer) { setNum(integer); }
 
 // +
 void Operator::operator+(int n) { setNum(num + n); }

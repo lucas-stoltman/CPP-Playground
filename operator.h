@@ -36,6 +36,7 @@ class Operator {
    // void operator<<(Operator &op);
 
    // =
+   void operator=(int integer);
 
    // +
    void operator+(int integer);

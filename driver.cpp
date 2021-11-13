@@ -78,13 +78,13 @@ int main() {
    Operator op("op");
 
    cout << "\n---------- << ---------\n";
-   op.print();
+   // op.print();
    // cout << op; TODO
-   op.print();
+   // op.print();
 
    cout << "\n---------- = ----------\n";
    op.print();
-   // op=5; TODO
+   op = 5;
    op.print();
 
    cout << "\n---------- + ----------\n";
@@ -138,9 +138,7 @@ int main() {
    <<
    >>
    =
-   -
    / fix truncation
-   *
 - reference
 - pointers
 - function pointers
