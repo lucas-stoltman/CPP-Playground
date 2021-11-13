@@ -40,7 +40,7 @@ class Operator {
    // +
    void operator+(int integer);
    // object addition
-   Operator& operator+(Operator& op1);
+   int operator+(Operator& op1);
 
    // ++prefix
    Operator& operator++();

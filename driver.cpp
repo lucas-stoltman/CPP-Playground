@@ -75,7 +75,7 @@ int main() {
         << "----------- Operator Overloading -----------\n"
         << "--------------------------------------------\n";
 
-   Operator op;
+   Operator op("op");
 
    cout << "\n---------- << ---------\n";
    op.print();
@@ -89,14 +89,14 @@ int main() {
 
    cout << "\n---------- + ----------\n";
    op.print();
-   op+5;
+   op + 5;
    op.print();
-   Operator opB("test",65);
-   opB.print();
-   Operator opC("adfjhsavf");
-   opC.print();
-   Operator opD(10013);
-   opD.print();
+
+   Operator op2("op2", 35);
+   op2.print();
+
+   cout << op.getNum() << " + " << op2.getNum() << endl;
+   cout << "Total: " << op + op2 << endl;
 
    cout << "\n-------- ++pre --------\n";
    op.print();

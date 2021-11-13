@@ -7,8 +7,8 @@
 using namespace std;
 
 // constructors
-Operator::Operator(string newName, int n) : name(newName), num(n){}
-Operator::Operator(int n) : num(n){}
+Operator::Operator(string newName, int n) : name(newName), num(n) {}
+Operator::Operator(int n) : num(n) {}
 
 Operator::~Operator() {}
 
@@ -34,16 +34,15 @@ void Operator::print() { cout << name << ": " << num << endl; }
 // =
 
 // +
-void Operator::operator+(int n) {
-   setNum(num+n);
+void Operator::operator+(int n) { setNum(num + n); }
+
+// object addition
+int Operator::operator+(Operator& op1) {
+   int n;
+   n = op1.getNum() + this->num;
+
+   return n;
 }
-
-   // object addition
-   Operator& Operator::operator+(Operator& op1) {
-      
-      return *this;
-   }
-
 
 // ++prefix
 Operator& Operator::operator++() {
