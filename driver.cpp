@@ -95,9 +95,12 @@ int main() {
    Operator op2("op2", 35);
    op2.print();
 
-   cout << op.getNum() << " + " << op2.getNum() << endl;
-   cout << "Total: " << op + op2 << endl;
+   Operator op3("op3", op + op2);
 
+   cout << "op3= " << op.getNum() << " + " << op2.getNum() << endl;
+   op3.print();
+
+   
    cout << "\n-------- ++pre --------\n";
    op.print();
    ++op;
@@ -105,8 +108,13 @@ int main() {
 
    cout << "\n---------- - ----------\n";
    op.print();
-   // op-5; TODO
+   op - 5;
    op.print();
+
+   op2.print();
+
+   cout << op.getNum() << " - " << op2.getNum() << endl;
+   cout << "Total: " << op - op2 << endl;
 
    cout << "\n---------- / ----------\n";
    op.print();

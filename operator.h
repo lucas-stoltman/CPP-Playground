@@ -46,7 +46,9 @@ class Operator {
    Operator& operator++();
 
    // -
-
+   void operator-(int integer);
+   // object subtraction
+   int operator-(Operator& op1);
    // /
 
    // *

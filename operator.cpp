@@ -39,7 +39,7 @@ void Operator::operator+(int n) { setNum(num + n); }
 // object addition
 int Operator::operator+(Operator& op1) {
    int n;
-   n = op1.getNum() + this->num;
+   n = this->num + op1.getNum();
 
    return n;
 }
@@ -51,6 +51,16 @@ Operator& Operator::operator++() {
 }
 
 // -
+void Operator::operator-(int n) { setNum(num - n); }
+
+// object subtraction
+int Operator::operator-(Operator& op1) {
+   int n;
+   n = this->num - op1.getNum();
+
+   return n;
+}
+
 
 // /
 
