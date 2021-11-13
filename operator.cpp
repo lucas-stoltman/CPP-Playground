@@ -61,7 +61,11 @@ int Operator::operator-(Operator& op1) {
    return n;
 }
 
-
 // /
+void Operator::operator/(int integer) {
+   double d = num / integer;
+   cout << d << endl;
+   setNum(d);
+}
 
 // *

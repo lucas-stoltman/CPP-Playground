@@ -49,7 +49,10 @@ class Operator {
    void operator-(int integer);
    // object subtraction
    int operator-(Operator& op1);
+
+
    // /
+   void operator/(int integer);
 
    // *
 };

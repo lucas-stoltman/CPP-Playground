@@ -100,7 +100,6 @@ int main() {
    cout << "op3= " << op.getNum() << " + " << op2.getNum() << endl;
    op3.print();
 
-   
    cout << "\n-------- ++pre --------\n";
    op.print();
    ++op;
@@ -118,7 +117,8 @@ int main() {
 
    cout << "\n---------- / ----------\n";
    op.print();
-   // op/5; TODO
+   cout << op.getNum() << " / " << 5 << endl;
+   op / 5;
    op.print();
 
    cout << "\n---------- * ----------\n";
@@ -139,7 +139,7 @@ int main() {
    >>
    =
    -
-   /
+   / fix truncation
    *
 - reference
 - pointers
