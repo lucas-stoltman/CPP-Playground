@@ -84,11 +84,13 @@ int main() {
 
    cout << "\n---------- = ----------\n";
    op.print();
+   cout << "Assigning " << op.getName() << " to 5\n";
    op = 5;
    op.print();
 
    cout << "\n---------- + ----------\n";
    op.print();
+   cout << "Adding 5\n";
    op + 5;
    op.print();
 
@@ -97,23 +99,28 @@ int main() {
 
    Operator op3("op3", op + op2);
 
-   cout << "op3= " << op.getNum() << " + " << op2.getNum() << endl;
-   op3.print();
+   cout << "Adding " << op.getName() << " to " << op2.getName() << endl;
+   cout << op.getNum() << " + " << op2.getNum() << endl;
+   cout << "Total: " << op3.getNum() << endl;
 
    cout << "\n-------- ++pre --------\n";
    op.print();
+   cout << "Incrementing " << op.getName() << " via prefix\n";
    ++op;
    op.print();
 
    cout << "\n---------- - ----------\n";
    op.print();
+   cout << "Subtracting 5\n";
    op - 5;
    op.print();
 
    op2.print();
 
+   cout << "Subtracting " << op.getName() << " from " << op2.getName() << endl;
    cout << op.getNum() << " - " << op2.getNum() << endl;
-   cout << "Total: " << op - op2 << endl;
+   op3 = op - op2;
+   cout << "Total: " << op3.getNum() << endl;
 
    cout << "\n---------- / ----------\n";
    op.print();
@@ -123,6 +130,7 @@ int main() {
 
    cout << "\n---------- * ----------\n";
    op.print();
+   cout << op.getNum() << " * " << 10 << endl;
    op * 10;
    op.print();
 
