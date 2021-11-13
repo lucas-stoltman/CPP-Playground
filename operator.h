@@ -45,8 +45,6 @@ class Operator {
    // ++prefix
    Operator& operator++();
 
-   // postfix++
-
    // -
 
    // /

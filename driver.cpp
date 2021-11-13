@@ -103,11 +103,6 @@ int main() {
    ++op;
    op.print();
 
-   cout << "\n-------- post++ -------\n";
-   op.print();
-   // op++; TODO
-   op.print();
-
    cout << "\n---------- - ----------\n";
    op.print();
    // op-5; TODO
@@ -135,8 +130,6 @@ int main() {
    <<
    >>
    =
-   +
-   postfix++
    -
    /
    *

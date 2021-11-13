@@ -50,8 +50,6 @@ Operator& Operator::operator++() {
    return *this;
 }
 
-// postfix++
-
 // -
 
 // /
