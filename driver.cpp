@@ -5,6 +5,7 @@
 
 #include "basic.h"
 #include "operator.h"
+#include "randomizer.h"
 
 using namespace std;
 
@@ -157,7 +158,7 @@ int main() {
    / fix truncation
 
    randomize "r" every time it is used
-   perhaps make it a class with randomze()
+   perhaps make it a class with randomize()
 
 - reference
 - pointers
