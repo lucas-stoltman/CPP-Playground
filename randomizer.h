@@ -7,21 +7,32 @@ class Randomizer {
    int max = 100;
 
   public:
-   Randomizer(int min = 1, int max = 100);
+   Randomizer();
+   Randomizer(int newMin, int newMax);
    ~Randomizer();
+
+   // getters
+   int getMin();
+   int getMax();
 
    // actions
    int randomize();
 };
 
-Randomizer::Randomizer(int min = 1, int max = 100) {}
+// using namespace std;
 
-Randomizer::~Randomizer() {}
+// Randomizer::Randomizer(int min = 1, int max = 100) {}
 
-// actions
-int randomize() {
-   srand(time(NULL));
-   // int r = rand() % max + min;
-}
+// Randomizer::~Randomizer() {}
+
+// // getters
+// int getMin() { return min; }
+// int getMax() { return max; }
+
+// // actions
+// int randomize() {
+//    srand(time(NULL));
+//    int r = rand() % getMax() + getMin();
+// }
 
 #endif
