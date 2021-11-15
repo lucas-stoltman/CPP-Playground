@@ -79,10 +79,7 @@ int main() {
    Operator op("op");
 
    // generating random numbers
-   srand(time(NULL));
-   int r = rand() % 20 + 1;
-
-   cout << "r = " << r << endl;
+   Randomizer r(1, 10);
 
    cout << "\n---------- << ---------\n";
    // op.print();
@@ -91,17 +88,20 @@ int main() {
 
    cout << "\n---------- = ----------\n";
    op.print();
-   cout << "Assigning " << op.getName() << " to " << r << endl;
-   op = r;
+   r.randomize();
+   cout << "Assigning " << op.getName() << " to " << r.getR() << endl;
+   op = r.getR();
    op.print();
 
    cout << "\n---------- + ----------\n";
    op.print();
-   cout << "Adding " << r << endl;
-   op + r;
+   r.randomize();
+   cout << "Adding " << r.getR() << endl;
+   op + r.getR();
    op.print();
 
-   Operator op2("op2", r);
+   r.randomize();
+   Operator op2("op2", r.getR());
    op2.print();
 
    Operator op3("op3", op + op2);
@@ -118,8 +118,10 @@ int main() {
 
    cout << "\n---------- - ----------\n";
    op.print();
-   cout << "Subtracting " << r << endl;
-   op - r;
+
+   r.randomize();
+   cout << "Subtracting " << r.getR() << endl;
+   op - r.getR();
    op.print();
 
    op2.print();
@@ -137,11 +139,10 @@ int main() {
 
    cout << "\n---------- * ----------\n";
    op.print();
-   cout << op.getNum() << " * " << 10 << endl;
-   op * 10;
+   r.randomize();
+   cout << op.getNum() << " * " << r.getR() << endl;
+   op* r.getR();
    op.print();
-
-   cout << "r = " << r << endl;
 
    // -----------------------------------------------------------
 
@@ -157,7 +158,7 @@ int main() {
    =
    / fix truncation
 
-   randomize "r" every time it is used
+  r.randomize()andomize "r" every time it is used
    perhaps make it a class with randomize()
 
 - reference

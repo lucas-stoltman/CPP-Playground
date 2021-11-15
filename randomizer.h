@@ -1,10 +1,11 @@
-#ifndef RANDOMIZER_H;
-#define RANDOMIZER_H ;
+#ifndef RANDOMIZER_H
+#define RANDOMIZER_H
 
 class Randomizer {
   private:
    int min = 1;
    int max = 100;
+   int r = 0;
 
   public:
    Randomizer();
@@ -14,9 +15,10 @@ class Randomizer {
    // getters
    int getMin();
    int getMax();
+   int getR();
 
    // actions
-   int randomize();
+   void randomize();
 };
 
 // using namespace std;
