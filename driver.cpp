@@ -148,13 +148,11 @@ int main() {
 /*
 
 - operator overload
+   apply consts
    <<
    >>
    =
    / fix truncation
-
-  r.randomize()andomize "r" every time it is used
-   perhaps make it a class with randomize()
 
 - reference
 - pointers
