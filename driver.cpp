@@ -88,20 +88,17 @@ int main() {
 
    cout << "\n---------- = ----------\n";
    op.print();
-   r.randomize();
-   cout << "Assigning " << op.getName() << " to " << r.getR() << endl;
+   cout << "Assigning " << op.getName() << " to " << r.randomize() << endl;
    op = r.getR();
    op.print();
 
    cout << "\n---------- + ----------\n";
    op.print();
-   r.randomize();
-   cout << "Adding " << r.getR() << endl;
+   cout << "Adding " << r.randomize() << endl;
    op + r.getR();
    op.print();
 
-   r.randomize();
-   Operator op2("op2", r.getR());
+   Operator op2("op2", r.randomize());
    op2.print();
 
    Operator op3("op3", op + op2);
@@ -119,8 +116,7 @@ int main() {
    cout << "\n---------- - ----------\n";
    op.print();
 
-   r.randomize();
-   cout << "Subtracting " << r.getR() << endl;
+   cout << "Subtracting " << r.randomize() << endl;
    op - r.getR();
    op.print();
 
@@ -133,14 +129,13 @@ int main() {
 
    cout << "\n---------- / ----------\n";
    op.print();
-   cout << op.getNum() << " / " << 5 << endl;
-   op / 5;
+   cout << op.getNum() << " / " << r.randomize() << endl;
+   op / r.getR();
    op.print();
 
    cout << "\n---------- * ----------\n";
    op.print();
-   r.randomize();
-   cout << op.getNum() << " * " << r.getR() << endl;
+   cout << op.getNum() << " * " << r.randomize() << endl;
    op* r.getR();
    op.print();
 

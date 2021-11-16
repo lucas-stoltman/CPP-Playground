@@ -18,7 +18,7 @@ class Randomizer {
    int getR();
 
    // actions
-   void randomize();
+   int randomize();
 };
 
 // using namespace std;

@@ -21,4 +21,7 @@ int Randomizer::getMax() { return max; }
 int Randomizer::getR() { return r; }
 
 // actions
-void Randomizer::randomize() { r = rand() % getMax() + getMin(); }
+int Randomizer::randomize() {
+   r = rand() % getMax() + getMin();
+   return r;
+}
