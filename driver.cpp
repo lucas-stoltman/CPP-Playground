@@ -139,19 +139,32 @@ int main() {
    op* r.getR();
    op.print();
 
-   // -----------------------------------------------------------
+   cout << "--------------------------------------------\n"
+        << "---------------- References ----------------\n"
+        << "--------------------------------------------\n";
+
+   int ref1 = 5;
+   int& ref2 = ref1;
+   int& ref3 = ref2;
+
+   cout << "Value of ref1 = " << ref1 << endl
+        << "Value of ref2 = " << ref2 << endl
+        << "Value of ref3 = " << ref3 << endl;
+
+   cout << "Changing ref1 to " << r.randomize() << endl;
+   ref1 = r.getR();
+
+   cout << "Value of ref1 = " << ref1 << endl
+        << "Value of ref2 = " << ref2 << endl
+        << "Value of ref3 = " << ref3 << endl;
+
+   // showcase a reference in a method here
 
    return 0;
 }
 
 // TODO List
 /*
-
-- operator overload
-   <<
-   >>
-   =
-   / fix truncation
 
 - reference
 - pointers
@@ -172,5 +185,8 @@ int main() {
    - Binary Tree
    - Hash Map
 
+
+Optional
+   - Fix operator division truncation
 
 */
