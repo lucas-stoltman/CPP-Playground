@@ -148,7 +148,6 @@ int main() {
 /*
 
 - operator overload
-   apply consts
    <<
    >>
    =
