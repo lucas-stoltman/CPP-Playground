@@ -16,9 +16,9 @@ Randomizer::Randomizer(int newMin, int newMax) : min(newMin), max(newMax) {
 Randomizer::~Randomizer() {}
 
 // getters
-int Randomizer::getMin() { return min; }
-int Randomizer::getMax() { return max; }
-int Randomizer::getR() { return r; }
+int Randomizer::getMin() const { return min; }
+int Randomizer::getMax() const { return max; }
+int Randomizer::getR() const { return r; }
 
 // actions
 int Randomizer::randomize() {

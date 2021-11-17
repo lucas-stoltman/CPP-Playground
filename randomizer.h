@@ -13,9 +13,9 @@ class Randomizer {
    ~Randomizer();
 
    // getters
-   int getMin();
-   int getMax();
-   int getR();
+   int getMin() const;
+   int getMax() const;
+   int getR() const;
 
    // actions
    int randomize();
